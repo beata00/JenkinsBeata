@@ -33,7 +33,7 @@ pipeline {
                 }
                 post {
                     always  {
-                        robot outputPath:'C:/Users/betty/.jenkins/workspace' , passThreshold: 80.0, unstableThreshold: 75.0'
+                        robot outputPath:'C:/Users/betty/.jenkins/workspace' , passThreshold: 80.0
                     }
                 }
             }
