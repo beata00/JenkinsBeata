@@ -29,7 +29,7 @@ pipeline {
 
             stage('Run Robot') {
                 steps {
-                    bat "robot C:\Users\betty\.jenkins\workspace\BeataJenkins\Selenium\Lab2.robot"
+                    bat "robot C:/Users/betty/.jenkins/workspace/BeataJenkins/Selenium/Lab2.robot"
                 }
                 post {
                     always  {
