@@ -36,7 +36,7 @@ Unsuccessful login
     When User fills in with email and password    ${invalid_email}    ${pass}
     Then User gets a warning message
 
-User can't book car without logging in Beata
+User can't book car without logging in 
     Given User is on homepage
     When User chooses dates    ${start_date}    ${end_date}
     Then User gets an alert when trying to book chosen car
