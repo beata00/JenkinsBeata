@@ -25,7 +25,18 @@ pipeline {
                     )
                     junit '**/TEST*.xml'
                 }
-            }   
+            }  
+
+            stage('Run Robot') {
+                steps {
+                    bat "robot C:\Users\betty\.jenkins\workspace\BeataJenkins\Selenium\Lab2.robot"
+                }
+                post {
+                    always  {
+                        robot robot outputPath: '.', logFileName: 'log.html', outputFileName: 'output.xml', reportFileName: 'report.hml', passThreshold: 100, unstableThreshold: 75.0
+                    }
+                }
+            }
         }
     }
 
