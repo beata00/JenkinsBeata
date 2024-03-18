@@ -15,7 +15,7 @@ pipeline {
             }
 
             stage('Post Test') {
-            steps {
+                   steps {
                 
                     jacoco(
                         execPattern: 'target/*.exec',
@@ -33,7 +33,7 @@ pipeline {
                 }
                 post {
                     always  {
-                        robot robot outputPath: '.', logFileName: 'log.html', outputFileName: 'output.xml', reportFileName: 'report.hml', passThreshold: 100, unstableThreshold: 75.0
+                        robot robot outputPath:robot C:/Users/betty/.jenkins/workspace/BeataJenkins/Selenium/Lab2.robot , passThreshold: 100, unstableThreshold: 75.0
                     }
                 }
             }
