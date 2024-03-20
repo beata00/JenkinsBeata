@@ -7,7 +7,7 @@ ${url}  http://rental11.infotiv.net/
 ${email}    beata@gmail.se
 ${pass}    monkey1
 ${invalid_email}    greece12@gmail.com
-${start_date}    04-01
+${start_date}    05-01
 ${end_date}    04-03
 ${invalid_start_date}    01-05
 ${card_number}    1111111111111111
